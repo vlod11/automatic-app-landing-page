@@ -488,7 +488,6 @@ nav > ul li a:active {
 	grid-area: c2;
 	display: flex;
 	flex-direction: column;
-	margin-top: 93px;
 
 	.screenshots-block
 	{
@@ -497,16 +496,21 @@ nav > ul li a:active {
 
 		.screenshots-block_picture
 		{
-			background-image: url($device-color);
+			background-image: url("assets/bumbershoot.png");
 			background-size: 210px auto;
 			background-repeat: no-repeat;
 			height: 500px;
-			min-width: 300px;	
+			min-width: 215px;	
+		}
+
+		.screenshots-block_picture:nth-child(2)
+		{
+			background-image: url("assets/English_radost.png");
 		}
 
 		.screenshots-block_description
 		{
-			margin: auto 80px;
+			margin: auto 5%;
 			color: #666;
 			line-height: 1.5;
 
@@ -517,7 +521,10 @@ nav > ul li a:active {
 	}
 }
 
-
+.google_play_badge
+{
+	background-image: url("assets/google_play_badge.png");
+}
 
 .feature {
 	display: flex;
