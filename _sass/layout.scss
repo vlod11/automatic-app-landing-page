@@ -321,6 +321,8 @@ nav > ul li a:active {
 	margin-top: 45px;
 	flex: 0 1 auto;
 	line-height: 1.5;
+	text-align: justify;
+
 }
 
 .appDescription {
@@ -436,6 +438,18 @@ nav > ul li a:active {
 	
 } 
 
+@media screen 
+  and (min-device-width: 1200px)  {
+	body,h3{
+		font-size: 3rem;
+	}
+
+	.appDescriptionContainer {
+		font-size: 3.7rem;
+	}
+}
+
+
 @media only screen and (max-width: 992px) {
 
 	.iphonePreview {
@@ -482,6 +496,7 @@ nav > ul li a:active {
 	flex-grow: 1;
 	flex-wrap: wrap;
 	margin-top: 93px;
+	display: none; // TODO: uncomment if needed
 }
 
 .screenshots {
@@ -499,7 +514,7 @@ nav > ul li a:active {
 			background-image: url("assets/bumbershoot.png");
 			background-size: 210px auto;
 			background-repeat: no-repeat;
-			height: 500px;
+			height: 440px;
 			min-width: 215px;	
 		}
 
@@ -513,9 +528,11 @@ nav > ul li a:active {
 			margin: auto 5%;
 			color: #666;
 			line-height: 1.5;
-
+			text-align: justify;
+			
 			h3{
 				color: #000;
+				margin-bottom: 5px;
 			}
 		}
 	}
@@ -664,11 +681,11 @@ footer {
 	width: 100%;
 	text-align: center;
 	padding-top: 70px;
-	padding-bottom: 70px;
+	// padding-bottom: 70px;
 }
 
 .footerIcons {
-	padding-bottom: 70px;
+	// padding-bottom: 70px;
 	display: flex;
 	flex: 0 0 100%;
 	justify-content: center;
@@ -705,6 +722,27 @@ footer {
 		margin-top: 0px;
 	}	
 
+	.screenshots-block
+	{
+		flex-direction: column;
+		align-items: center;
+
+		.screenshots-block_description
+		{
+			text-align: justify;
+		}
+	}
+
+	.screenshots-block:nth-child(1)
+	{
+		flex-direction: column-reverse;
+		margin: 10% auto
+	}
+
+	.iphonePreview
+	{
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 992px) {
@@ -716,11 +754,11 @@ footer {
 		width: 100%;
 		text-align: center;
 		padding-top: 54px;
-		padding-bottom: 61px;
+		// padding-bottom: 61px;
 	}
 	
 	.footerIcons {
-		padding-bottom: 70px;
+		// padding-bottom: 70px;
 		display: flex;
 	}
 	
